@@ -1,22 +1,23 @@
 import React from 'react';
 import './App.css';
+import Button from "./components/Button";
 
-//Handbags & Purses Stappenplan Buttons-1
+//Handbags & Purses Stappenplan Buttons-2
 
 function App() {
     return (
         <>
             <h1>Handbags & Purses</h1>
             <nav>
-                <button type='button' onClick={() => console.log("to the collection")}>
+                <Button isDisabled={false} clickHandler={() => console.log("to the collection")}>
                     to the collection
-                </button>
-                <button type='button' onClick={() => console.log("shop all bags")}>
+                </Button>
+                <Button isDisabled={false} clickHandler={() => console.log("shop all bags")}>
                     shop all bags
-                </button>
-                <button type='button' onClick = {() => console.log("pre-orders")} disabled>
+                </Button>
+                <Button isDisabled={true} clickHandler={() => console.log("pre-orders")}>
                     pre-orders
-                </button>
+                </Button>
             </nav>
         </>
 
