@@ -5,8 +5,9 @@ import bag_one from './assets/bag_1.png';
 import bag_two from './assets/bag_2.png';
 import bag_three from './assets/bag_3.png';
 import bag_four from './assets/bag_4.png';
+import Product from "./components/Product";
 
-//Handbags & Purses Stappenplan Buttons-2 & Stappenplan Producten-1
+//Handbags & Purses Stappenplan Buttons-2 & Stappenplan Producten-2
 
 function App() {
     return (
@@ -26,30 +27,30 @@ function App() {
             </nav>
 
             <main>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_one} alt="bag_1"/>
-                    <p>The handy bag</p>
-                    <h4>€400,-</h4>
-                </article>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_two} alt="bag_2"/>
-                    <p>The stylish bag</p>
-                    <h4>€250,-</h4>
-                </article>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_three} alt="bag_3"/>
-                    <p>The simple bag</p>
-                    <h4>€300,-</h4>
-                </article>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_four} alt="bag_4"/>
-                    <p>The trendy bag</p>
-                    <h4>€150,-</h4>
-                </article>
+                <Product
+                    label="Best seller"
+                    image={bag_one}
+                    title="The handy bag"
+                    price={400}
+                />
+                <Product
+                    label="Best seller"
+                    image={bag_two}
+                    title="The stylish bag"
+                    price={250}
+                />
+                <Product
+                    label="New collection"
+                    image={bag_three}
+                    title="The simple bag"
+                    price={300}
+                />
+                <Product
+                    label="New collection"
+                    image={bag_four}
+                    title="The trendy bag"
+                    price={150}
+                />
             </main>
 
         </>
