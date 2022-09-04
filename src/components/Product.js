@@ -9,7 +9,6 @@ function Product({label, image, title, price}) {
             <h4>€{price},-</h4>
         </article>
 
-
     );
 }
 
