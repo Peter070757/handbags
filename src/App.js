@@ -8,8 +8,9 @@ import bag_four from './assets/bag_4.png';
 import Product from './components/Product';
 import brand from './assets/brand.png';
 import our_story from './assets/our_story.png';
+import Tile from './components/Tile'
 
-//Handbags & Purses Stappenplan Buttons-2 & Stappenplan Producten-2 & Stappenplan Tegels-1
+//Handbags & Purses Stappenplan Buttons-2 & Stappenplan Producten-2 & Stappenplan Tegels-2
 
 function App() {
     return (
@@ -56,27 +57,21 @@ function App() {
             </main>
 
             <footer>
-                <section>
-                    <h2>The Brand</h2>
+                <Tile title="The Brand">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, earum fuga. Commodi dolor
                         dolorem eveniet, officia praesentium provident, quam repellat rerum sint soluta ut vero?</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque delectus eos ipsum optio
                         perferendis ut, veritatis vero? Accusantium aliquam debitis expedita illo incidunt laborum
                         veniam!</p>
-                </section>
-                <section>
-                    <img src={brand} alt="Brand logo"/>
-                </section>
-                <section>
-                    <img src={our_story} alt="The designers"/>
-                </section>
-                <section>
-                    <h2>Our Story</h2>
+                </Tile>
+                <Tile img={brand} imgDescription="Brand logo"/>
+                <Tile img={our_story} imgDescription="The designers"/>
+                <Tile title="Our Story">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt dignissimos et
                         laudantium necessitatibus perferendis perspiciatis placeat possimus quam rem, saepe sed
                         voluptatem. A amet, consectetur debitis delectus deserunt dolore dolorem eum laborum nulla odio
                         omnis optio quae quaerat tempore.</p>
-                </section>
+                </Tile>
             </footer>
 
         </>
